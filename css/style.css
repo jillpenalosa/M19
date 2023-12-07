@@ -1,0 +1,308 @@
+body {
+  background-color: #082B59;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 1.3rem;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+/* make images flexible */
+img {
+ max-width:100%;
+ border-radius:10px;
+}
+a {
+  color: #59331d;
+}
+a:hover {
+  text-decoration: none;
+}
+header {
+  border-bottom: 10px solid #d98555;
+}
+/* navbar styling */
+nav {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+nav ul {
+margin: 1.5rem 1rem;
+padding: 0;
+list-style-type: none;
+}
+nav a {
+text-decoration: none;
+padding: 0.5rem 1rem;
+display: block;
+color: #ffffff;
+text-align: center;
+}
+nav a:hover {
+color: #d98555;
+}
+nav .logo a {
+background-color: transparent;
+margin: 0;
+}
+.fa-solid{
+padding-right:0.3rem;
+}
+
+/* max width on the image in pixels */
+.logo img {
+  max-width: 250px;
+}
+
+/* establishes a white background */
+.container-bkgd {
+  background: #ffffff url("../media/images/gulp-bottom-beans.jpg") repeat-x bottom;
+  padding-bottom: 200px;
+}
+
+/* sits inside of the white background, centered */
+.container {
+  padding: 2rem 5rem 5rem 5rem;
+  display:flex;
+  flex-direction: column;
+}
+picture {
+  justify-content:center;
+  margin-top: 4rem;
+  margin-bottom: -2rem;
+}
+picture img, source {
+  border-radius:10px;
+  padding:0;
+  margin:0;
+  width:100%;
+}
+
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+/* MOBILE HOME PAGE STYLING */
+.hcontainer {
+  padding: 2rem 5rem 5rem 5rem;
+  display:flex;
+  flex-direction: column;
+}
+.homeinfo{
+    margin-top:0;
+  }
+
+
+/* MOBILE PRODUCTS PAGE STYLING */
+h3{
+  margin:0;
+}
+.pcontainer{
+  padding: 2rem;
+  display:flex;
+  flex-direction: column;
+}
+.card{
+  padding:1rem;
+}
+.pdescription{
+  margin-top:0rem;
+}
+/* MOBILE CONTACT PAGE STYLING */
+.contactinfo{
+  margin-top:0;
+}
+
+
+/* FOOTER STYLING */
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1rem;
+}
+.footer2{
+  font-size:1.2rem;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer a {
+  color: #f2f2f2;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+.fa-brands{
+  font-size: 2rem;
+}
+
+/* FOR TABLET STYLING*/
+
+@media (min-width:768px){
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0rem 1rem;
+}
+nav a {
+  margin: 0 0 1rem 0;
+  
+}
+.logo {
+  flex-basis: 100%;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+article{
+  flex-basis:60%;
+}
+picture{
+  flex-basis:35%;
+  margin-top:8rem;
+}
+
+/* TABLET HOME PAGE STYLING */
+.hcontainer{
+  display:grid;
+  grid-template-columns:repeat(6, 1fr);
+  gap:2rem;
+}
+.homephoto{
+  grid-column: 1/4;
+}
+.homearticle{
+  grid-column: 4/7; 
+}
+.hometitle{
+  margin-top:0;
+}
+/* TABLET CONTACTS PAGE STYLING */
+.contactsarticle{
+  flex-basis:30%;
+}
+.contactsphoto{
+  width: 400px;
+}
+
+/* TABLET PRODUCTS PAGE STYLING */
+.pcontainer{
+  display:grid;
+  grid-template-columns:repeat(6, 1fr);
+  grid-template-rows:repeat(6, 1fr);
+  gap:0.5rem;
+}
+.card1{
+  grid-column: 1/4;
+  grid-row:1/3;
+}
+.card2{
+  grid-column: 4/7;
+  grid-row:1/3;
+}
+.card3{
+ grid-column: 1/4;
+ grid-row:3/5;
+}
+.card4{
+  grid-column: 4/7;
+  grid-row:3/5;
+}
+.card5{
+  grid-column: 1/4;
+  grid-row:5/7;
+}
+.card6{
+  grid-column: 4/7;
+  grid-row:5/7;
+}
+}
+
+@media (min-width:992px){
+  nav ul {
+    justify-content: flex-start;
+  }
+  nav a {
+    margin-top: 7rem;
+  }
+  .logo {
+    flex-basis: auto;
+    margin-right: auto;
+  }
+  .container{
+    display:flex;
+    flex-flow: row wrap;
+  }
+  article{
+    flex-basis:50%;
+  }
+  picture{
+    flex-basis: 40%;
+    padding-left:0.5rem;
+    margin-top:8rem;
+    max-width:100%;
+  }
+  /* DESKTOP PRODUCTS PAGE STYLING */
+  .card1{
+    grid-column: 1/3;
+    grid-row:1/4;
+  }
+  .card2{
+    grid-column: 3/5;
+    grid-row:1/4;
+  }
+  .card3{
+    grid-column: 5/7;
+    grid-row:1/4;
+  }
+  .card4{
+    grid-column: 1/3;
+    grid-row:4/7;
+  }
+  .card5{
+    grid-column: 3/5;
+    grid-row:4/7;
+  }
+  .card6{
+    grid-column: 5/7;
+    grid-row:4/7;
+  }
+  /* DESKTOP CONTACT PAGE STYLING */
+  .contactsarticle{
+    margin-top:6rem;
+    
+  }
+  
+  .contactsphoto{
+    flex-basis:50%;
+    width:100%;
+    
+  }
+}
