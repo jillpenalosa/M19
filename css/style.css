@@ -116,7 +116,6 @@ h3{
   margin:0;
 }
 .pcontainer{
-  padding: 2rem;
   display:flex;
   flex-direction: column;
 }
